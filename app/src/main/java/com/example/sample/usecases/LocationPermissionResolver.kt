@@ -7,9 +7,9 @@ import com.example.sample.MainActivity
 
 class LocationPermissionResolver(private val context: MainActivity) {
 
-    fun invoke(action: () -> Unit) {
+    fun invoke() {
         val launcher =
-            context.registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { action() }
+            context.registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {}
 
         launcher.launch(arrayOf(ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION))
     }
