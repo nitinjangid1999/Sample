@@ -17,7 +17,7 @@ class SendEventToBureau(
         val eventId = UUID.randomUUID().toString()
 
         val bureauConfig = BureauConfig(
-            credentialId = "a89d1169-0e80-4bc9-8444-ba6309d844b8",
+            credentialId = "", // Enter your own credential id
             eventId = eventId,
             environment = Environment.ENV_SANDBOX,
             application = application,
